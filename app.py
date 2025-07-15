@@ -426,11 +426,11 @@ if 'chat_session' not in st.session_state:
     st.session_state.chat_session = None
 
 # API configuration
-API_URL = "https://pr-chatbot-402934621063.europe-west1.run.app/api/chat/chat-thread/"
+API_URL = "https://purshare-dev-env-402934621063.europe-west9.run.app/api/chat/chat-thread/"
 
 def stream_chat_api(query: str, agent: str):
     """Stream response from the API using SSE"""
-    url = "https://pr-chatbot-402934621063.europe-west1.run.app/api/chat/chat-thread/"
+    url = "https://purshare-dev-env-402934621063.europe-west9.run.app/api/chat/chat-thread/"
     payload = {"query": query, "agent": agent, "session_id": st.session_state.chat_session}
     
     try:
